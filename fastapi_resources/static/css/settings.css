@@ -1,0 +1,36 @@
+/*--------------------VARIABLES--------------------*/
+:root{
+    --main_bg: #051F20;
+    --sub_bg: #0B2B26;
+    --color_2: #163832;
+    --hover_bg: #235347;
+    --border_color: #8EB69B;
+    --text_color: #DAF1DE;
+    --text_hover_color: #EEF8F0;
+}
+
+/*--------------------SETUP--------------------*/
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+html{
+    margin: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--main_bg);
+}

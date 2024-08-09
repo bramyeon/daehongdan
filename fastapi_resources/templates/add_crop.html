@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Potato Farmer</title>
+        <link href="../static/css/settings.css" rel="stylesheet">
+        <link href="../static/css/add_crop.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div class="crop_info_title">Crop Information</div>
+        <div class="crop_info_container">
+            <div class="crop_info_sub_container">
+                <input class="crop_info_name" value="Crop Name"></input>
+                <div class="image_upload_container">
+                    <input type="file" class="img_input" accept="image/*" hidden>
+                    Click to Select Image
+                </div>
+
+                <div class="crop_info_schedule_title">Humidity Schedule</div>
+                <table class="crop_info_humidity_table">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Humidity Function (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <div class="crop_info_schedule_title">Temperature Schedule</div>
+                <table class="crop_info_temperature_table">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Temperature Function (˚C)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr></tr>
+                    </tbody>
+                </table>
+
+                <div class="crop_info_schedule_title">Light Intensity Schedule</div>
+                <table class="crop_info_light_table">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Light Intensity Function</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="crop_schedule_graph_container"></div>
+
+        <div class="save_crop">Save Crop</div>
+        <div class="edit_schedules">Edit Schedules</div>
+
+        <a href="/">
+            <div class="home_link">Home</div>
+        </a>
+
+        <div class="edit_schedule_overlay">
+            <div class="edit_schedule_container">
+                <div class="edit_schedule_sub_container">
+                    <div class="crop_info_schedule_title">Humidity Schedule</div>
+                    <table class="crop_info_humidity_editor_table">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Humidity Function (%)</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="2">+</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="crop_info_schedule_title">Temperature Schedule</div>
+                    <table class="crop_info_temperature_editor_table">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Temperature Function (˚C)</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td colspan="2">+</td></tr>
+                        </tbody>
+                    </table>
+
+                    <div class="crop_info_schedule_title">Light Intensity Schedule</div>
+                    <table class="crop_info_light_editor_table">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Light Intensity Function</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td colspan="2">+</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="save_setting">Save</div>
+            <div class="close_editor">Close Editor</div>
+        </div>
+
+    </body>
+
+    <script>
+        // let crop_names = {{crop_names|safe}}
+        // let crop_img_paths = {{crop_img_paths|safe}}
+        // let humidity_times = {{humidity_times|safe}}
+        // let humidity_functions = {{humidity_functions|safe}}
+        // let light_times = {{light_times|safe}}
+        // let light_functions = {{light_functions|safe}}
+        // let temperature_times = {{temperature_times|safe}}
+        // let temperature_functions = {{temperature_functions|safe}}
+    </script>
+
+    <script type="text/javascript" src="../static/js/add_crop.js"></script>
+</html>

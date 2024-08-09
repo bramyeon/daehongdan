@@ -1,0 +1,6 @@
+crop_name,start_time,end_time,light
+potato,08:00,18:00,True
+potato,18:00,08:00,False
+strawberry,10:00,17:00,True
+strawberry,17:00,10:00,False
+lavender,00:00,00:00,0

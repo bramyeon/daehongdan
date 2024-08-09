@@ -1,0 +1,8 @@
+pymodi
+pandas
+pydub
+simpleaudio
+uvicorn
+fastapi
+jinja2
+
